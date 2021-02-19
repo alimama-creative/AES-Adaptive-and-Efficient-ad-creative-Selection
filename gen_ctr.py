@@ -105,7 +105,7 @@ class StatsPolicy(object):
         self.root.fprint(f)
 
 if __name__ == "__main__":
-    path = "/disk4/chenjin/simulation/data/tree_struct2.txt"
+    path = "data/tree_struct2.txt"
     mc = StatsPolicy("", path)
     mc.create_random_ctr()
     # mc.save_tree("data/tree_vertex_weight.txt")
