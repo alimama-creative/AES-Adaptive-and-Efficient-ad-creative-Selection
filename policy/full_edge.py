@@ -1,7 +1,7 @@
 import numpy as np 
 import random
 from policy import util
-from policy.lr import LR,CtrDataset,FTRL
+# from policy.lr import LR,CtrDataset,FTRL
 import tqdm
 import time
 import math
