@@ -2,11 +2,11 @@ import numpy as np
 import logging
 import coloredlogs
 import argparse
-from policy.baseline import EpsilonGreedy, UCB, Random, thompson, thompson2
-from policy.stats_policy import Reg_Pv, Reg, Epsilon1,Reg_TS
+from policy.baseline import EpsilonGreedy, UCB, Random, thompson
+from policy.stats_policy import Epsilon1,Reg_TS
 from policy.two_folds import Reg2pv,Reg2Ts
 from policy.linucb import LinUCB,lints
-from policy.full_edge import Full_Reg,Full_Ts,Full_probit
+from policy.full_edge import Full_Ts,Full_probit
 import datetime
 
 
