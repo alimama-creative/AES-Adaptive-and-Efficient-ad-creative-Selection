@@ -202,7 +202,7 @@ if __name__ == "__main__":
     ISOTIMEFORMAT = '%m%d-%H%M'
     
     import os
-    if not os.exists('data/res/'):
+    if not os.path.exists('data/res/'):
         os.mkdir('data/res')
     file = "data/res/ctr_res-" + str(datetime.datetime.now().strftime('%m-%d %H:%M:%S'))+".txt"
     file1 = "data/res/regret_res-" + str(datetime.datetime.now().strftime('%m-%d %H:%M:%S')) + ".txt"
