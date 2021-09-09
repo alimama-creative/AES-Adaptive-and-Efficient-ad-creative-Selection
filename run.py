@@ -3,7 +3,7 @@ import logging
 import coloredlogs
 import argparse
 from policy.baseline import EpsilonGreedy, UCB, Random, thompson, thompson2
-from policy.stats_policy import Reg_Pv, Reg, Epsilon1,Reg_TS,LogReg
+from policy.stats_policy import Reg_Pv, Reg, Epsilon1,Reg_TS
 from policy.two_folds import Reg2pv,Reg2Ts
 from policy.linucb import LinUCB,lints
 from policy.full_edge import Full_Reg,Full_Ts,Full_probit
@@ -201,6 +201,9 @@ if __name__ == "__main__":
 
     ISOTIMEFORMAT = '%m%d-%H%M'
     
+    import os
+    if not os.exists('data/res/'):
+        os.mkdir('data/res')
     file = "data/res/ctr_res-" + str(datetime.datetime.now().strftime('%m-%d %H:%M:%S'))+".txt"
     file1 = "data/res/regret_res-" + str(datetime.datetime.now().strftime('%m-%d %H:%M:%S')) + ".txt"
     with open(file, "w") as f:
