@@ -2,7 +2,7 @@ import numpy as np
 import random
 from policy.tree_datastruct import TreeNode
 from policy import util
-from policy.lr import LR,CtrDataset,FTRL
+# from policy.lr import LR,CtrDataset,FTRL
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
