@@ -123,7 +123,7 @@ def run(creative_file, policy_type, other,constraints, p_dict):
         policy = Reg2pv(creative,other, constraints, p_dict)
     elif policy_type == "Full_TS":
         policy = Full_Ts(creative, other, constraints, p_dict)
-    elif policy_type == 'Edge_TS':
+    elif policy_type == 'Vertex_TS':
         policy = lints(creative, other, p_dict)
     elif policy_type == 'MVT':
         policy = Full_probit(creative,other,constraints,p_dict)
