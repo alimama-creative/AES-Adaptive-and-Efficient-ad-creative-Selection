@@ -30,7 +30,7 @@ Run an example with   `python run.py -b 1000 -p 1000000 -j AES -r 20`
 + `-p` total pv
 + `-r` multiple running repetitions
 + `-b` batch size(update intervals)
-+ `-j` method : EGreedy,thompson,ucb,IndEgreedy,Edge_TS,LinUCB,TEgreedy,Full_TS,Edge_TS,MVT,AES(proposed method)
++ `-j` method : EGreedy,thompson,ucb,IndEgreedy,Edge_TS,LinUCB,TEgreedy,Full_TS,Vertex_TS,MVT,AES(proposed method)
 + `-e` parameter for egreedy
 + `-t` EE type : 0,1,2
     + 0: regular exploration
